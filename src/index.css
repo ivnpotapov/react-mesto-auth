@@ -1,0 +1,72 @@
+@import url('./vendor/normalize.css');
+@import url('./vendor/fonts/fonts.css');
+
+@import url('./blocks/page/page.css');
+@import url('./blocks/page/__container/page__container.css');
+
+@import url('./blocks/header/header.css');
+@import url('./blocks/header/__logo-container/header__logo-container.css');
+@import url('./blocks/header/__logo/header__logo.css');
+@import url('./blocks/header/__burger/header__burger.css');
+@import url('./blocks/header/__burger/_active/header__burger_active.css');
+@import url('./blocks/header/__burger-item/header__burger-item.css');
+@import url('./blocks/header/__link/header__link.css');
+@import url('./blocks/header/__auth-container/header__auth-container.css');
+@import url('./blocks/header/__auth-container/_active/header__auth-container_active.css');
+@import url('./blocks/header/__auth-email/header__auth-email.css');
+@import url('./blocks/header/__auth-link/header__auth-link.css');
+
+@import url('./blocks/main/main.css');
+
+@import url('./blocks/profile/profile.css');
+@import url('./blocks/profile/__avatar-wrap/profile__avatar-wrap.css');
+@import url('./blocks/profile/__avatar/profile__avatar.css');
+@import url('./blocks/profile/__info/profile__info.css');
+@import url('./blocks/profile/__name/profile__name.css');
+@import url('./blocks/profile/__name-text/profile__name-text.css');
+@import url('./blocks/profile/__button-edit/profile__button-edit.css');
+@import url('./blocks/profile/__job/profile__job.css');
+@import url('./blocks/profile/__button-plus/profile__button-plus.css');
+
+@import url('./blocks/elements/elements.css');
+@import url('./blocks/element/element.css');
+@import url('./blocks/element/__image/element__image.css');
+@import url('./blocks/element/__caption-area/element__caption-area.css');
+@import url('./blocks/element/__trash/element__trash.css');
+@import url('./blocks/element/__trash/_hidden/element__trash_hidden.css');
+@import url('./blocks/element/__name/element__name.css');
+@import url('./blocks/element/__button-like/element__button-like.css');
+@import url('./blocks/element/__button-like/_active/element__button-like_active.css');
+@import url('./blocks/element/__like-counter/element__like-counter.css');
+
+@import url('./blocks/popup/popup.css');
+@import url('./blocks/popup/_name/popup_name_img.css');
+@import url('./blocks/popup/_name/popup_name_auth.css');
+@import url('./blocks/popup/__container/popup__container.css');
+@import url('./blocks/popup/__container/_name/popup__container_name_auth.css');
+@import url('./blocks/popup/__close-icon/popup__close-icon.css');
+@import url('./blocks/popup/__close-icon/_name/popup__close-icon_name_auth.css');
+@import url('./blocks/popup/__title/popup__title.css');
+@import url('./blocks/popup/__title/_name/popup__title_name_auth.css');
+@import url('./blocks/popup/__form/popup__form.css');
+@import url('./blocks/popup/__form/_name/popup__form_name_auth.css');
+@import url('./blocks/popup/__input/popup__input.css');
+@import url('./blocks/popup/__button/popup__button.css');
+@import url('./blocks/popup/__button/_name/popup__button_name_auth.css');
+@import url('./blocks/popup/__button/_disabled/popup__button_disabled.css');
+@import url('./blocks/popup/__img-container/popup__img-container.css');
+@import url('./blocks/popup/__img/popup__img.css');
+@import url('./blocks/popup/__img-label/popup__img-label.css');
+@import url('./blocks/popup/__error/popup__error.css');
+@import url('./blocks/popup/__error/_visible/popup__error_visible.css');
+@import url('./blocks/popup/__input/_type/popup__input_type_error.css');
+@import url('./blocks/popup/__input/_name/popup__input_name_auth.css');
+@import url('./blocks/popup/__text-container/popup__text-container.css');
+@import url('./blocks/popup/__text/popup__text.css');
+@import url('./blocks/popup/__text-link/popup__text-link.css');
+@import url('./blocks/popup/__auth-img/popup__auth-img.css');
+@import url('./blocks/popup/__auth-label/popup__auth-label.css');
+@import url('./blocks/popup/_opened/popup_opened.css');
+
+@import url('./blocks/footer/footer.css');
+@import url('./blocks/footer/__text/footer__text.css');

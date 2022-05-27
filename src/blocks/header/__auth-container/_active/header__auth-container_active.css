@@ -1,0 +1,7 @@
+.header__auth-container_active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 18px;
+  padding: 7px 0 40px 0;
+}

@@ -1,0 +1,11 @@
+.popup__text-link {
+  cursor: pointer;
+  margin: 0 0 0 5px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}

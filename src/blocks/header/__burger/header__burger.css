@@ -1,0 +1,17 @@
+.header__burger {
+  grid-area: burger;
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  row-gap: 8px;
+}
+
+.header__burger:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .header__burger {
+    display: none;
+  }
+}

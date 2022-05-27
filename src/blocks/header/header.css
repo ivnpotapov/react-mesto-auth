@@ -1,0 +1,24 @@
+.header {
+  color: #ffffff;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-areas:
+    'auth auth'
+    'logo burger';
+  padding: 28px 33px 31px 27px;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  line-height: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    grid-template-areas: 'logo  burger';
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 45px 0 40px 0;
+  }
+}

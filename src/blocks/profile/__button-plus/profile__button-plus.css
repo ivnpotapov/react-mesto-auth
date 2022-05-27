@@ -1,0 +1,26 @@
+.profile__button-plus {
+  width: 282px;
+  height: 50px;
+  padding: 0;
+  margin: 32px 0 0 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  background-color: #000;
+  background-image: url(../../../images/profile__button-plus.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.profile__button-plus:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 646px) {
+  .profile__button-plus {
+    width: 150px;
+    height: 50px;
+    margin: 0 0 0 auto;
+  }
+}

@@ -1,0 +1,5 @@
+.header__link {
+  grid-area: burger;
+  color: #fff;
+  text-decoration: none;
+}
