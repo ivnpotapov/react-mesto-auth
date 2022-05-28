@@ -5,7 +5,6 @@ import { CurrentUserContext } from '../../contexts/CurrentUserContext';
 class EditProfilePopup extends Component {
   constructor(props) {
     super(props);
-    this.counter = true;
     this.state = {
       username: '',
       description: '',
@@ -13,17 +12,12 @@ class EditProfilePopup extends Component {
   }
   static contextType = CurrentUserContext;
 
-  componentDidUpdate() {
-    if (this.counter && this.context.name) {
-      this.setState(
-        {
-          username: this.context.name,
-          description: this.context.about,
-        },
-        () => {
-          this.counter = false;
-        },
-      );
+  componentDidUpdate(prevProps) {
+    if (this.props.isOpen !== prevProps.isOpen && this.context.name) {
+      this.setState({
+        username: this.context.name,
+        description: this.context.about,
+      });
     }
   }
 
