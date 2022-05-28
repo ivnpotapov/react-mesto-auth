@@ -10,6 +10,15 @@ class AddPlacePopup extends Component {
     };
   }
 
+  componentDidUpdate(prevProps) {
+    if (this.props.isOpen !== prevProps.isOpen) {
+      this.setState({
+        name: '',
+        link: '',
+      });
+    }
+  }
+
   handleNameChange = (e) => {
     this.setState({
       name: e.target.value,

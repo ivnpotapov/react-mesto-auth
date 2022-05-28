@@ -30,6 +30,7 @@ class Login extends React.Component {
         localStorage.setItem('token', res.token);
       })
       .catch((err) => {
+        this.props.openAuthPopup();
         console.log(err);
       });
   };

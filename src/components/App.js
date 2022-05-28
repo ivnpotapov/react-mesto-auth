@@ -240,6 +240,7 @@ class App extends Component {
               <Header headerLink={'/sign-in'} />
               <Login
                 handleLogin={this.handleLogin}
+                openAuthPopup={this.openAuthPopup}
                 loggedIn={this.state.loggedIn}
               />
             </Route>

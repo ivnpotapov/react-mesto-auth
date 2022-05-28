@@ -1,4 +1,5 @@
 .popup__auth-label {
+  align-self: center;
   margin: 40px 0 0 0;
   width: 244px;
   font-family: 'Inter';

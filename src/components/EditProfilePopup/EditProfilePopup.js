@@ -5,6 +5,7 @@ import { CurrentUserContext } from '../../contexts/CurrentUserContext';
 class EditProfilePopup extends Component {
   constructor(props) {
     super(props);
+    this.counter = true;
     this.state = {
       username: '',
       description: '',
@@ -13,17 +14,22 @@ class EditProfilePopup extends Component {
   static contextType = CurrentUserContext;
 
   componentDidUpdate() {
-    if (this.state.name === '') {
-      this.setState({
-        name: this.context.name,
-        description: this.context.about,
-      });
+    if (this.counter && this.context.name) {
+      this.setState(
+        {
+          username: this.context.name,
+          description: this.context.about,
+        },
+        () => {
+          this.counter = false;
+        },
+      );
     }
   }
 
   handleNameChange = (e) => {
     this.setState({
-      name: e.target.value,
+      username: e.target.value,
     });
   };
 
@@ -36,7 +42,7 @@ class EditProfilePopup extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.onUpdateUser({
-      name: this.state.name,
+      name: this.state.username,
       about: this.state.description,
     });
   };
@@ -51,7 +57,7 @@ class EditProfilePopup extends Component {
         onSubmit={this.handleSubmit}>
         <label className='popup__label-input'>
           <input
-            value={this.state.name}
+            value={this.state.username}
             onChange={this.handleNameChange}
             type='text'
             className='popup__input'
