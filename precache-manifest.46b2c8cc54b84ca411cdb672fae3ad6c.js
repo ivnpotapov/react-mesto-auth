@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6a06985a9a59ba3ef1fc",
+    "revision": "53e04f2f348a791c350e",
     "url": "/react-mesto-auth/static/css/main.01bb2687.chunk.css"
   },
   {
-    "revision": "6a06985a9a59ba3ef1fc",
-    "url": "/react-mesto-auth/static/js/main.6a06985a.chunk.js"
+    "revision": "53e04f2f348a791c350e",
+    "url": "/react-mesto-auth/static/js/main.53e04f2f.chunk.js"
   },
   {
     "revision": "2bc649a667ccbd873989",
@@ -32,32 +32,32 @@ self.__precacheManifest = [
     "url": "/react-mesto-auth/static/media/auth-fail.4072126c.svg"
   },
   {
-    "revision": "75db5319e7e87c587019a5df08d7272c",
-    "url": "/react-mesto-auth/static/media/Inter-Medium.75db5319.woff2"
+    "revision": "661569afe57a38e1529a775a465da20b",
+    "url": "/react-mesto-auth/static/media/Inter-Black.661569af.woff2"
   },
   {
-    "revision": "3ac83020fe53b617b79b5e2ad66764af",
-    "url": "/react-mesto-auth/static/media/Inter-Regular.3ac83020.woff"
+    "revision": "75db5319e7e87c587019a5df08d7272c",
+    "url": "/react-mesto-auth/static/media/Inter-Medium.75db5319.woff2"
   },
   {
     "revision": "dc131113894217b5031000575d9de002",
     "url": "/react-mesto-auth/static/media/Inter-Regular.dc131113.woff2"
   },
   {
-    "revision": "661569afe57a38e1529a775a465da20b",
-    "url": "/react-mesto-auth/static/media/Inter-Black.661569af.woff2"
+    "revision": "3ac83020fe53b617b79b5e2ad66764af",
+    "url": "/react-mesto-auth/static/media/Inter-Regular.3ac83020.woff"
   },
   {
-    "revision": "d476a8b86d0b656cfa463c1148e96069",
-    "url": "/react-mesto-auth/static/media/profile__avatar-edit-icon.d476a8b8.svg"
+    "revision": "e0270e6710268c67a26289e12877ccbb",
+    "url": "/react-mesto-auth/static/media/profile__button-plus.e0270e67.svg"
   },
   {
     "revision": "ac9f293799cc1ea88155b5abd267b418",
     "url": "/react-mesto-auth/static/media/profile__button-edit.ac9f2937.svg"
   },
   {
-    "revision": "e0270e6710268c67a26289e12877ccbb",
-    "url": "/react-mesto-auth/static/media/profile__button-plus.e0270e67.svg"
+    "revision": "d476a8b86d0b656cfa463c1148e96069",
+    "url": "/react-mesto-auth/static/media/profile__avatar-edit-icon.d476a8b8.svg"
   },
   {
     "revision": "4831282e649d143ce022040beb49ad4f",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/react-mesto-auth/static/media/Inter-Medium.c0638bea.woff"
   },
   {
-    "revision": "114c187cd9488b86ccdad9a9a43e4b45",
+    "revision": "8066530b08f56f1d525c42e34c11d276",
     "url": "/react-mesto-auth/index.html"
   }
 ];
