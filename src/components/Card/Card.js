@@ -16,14 +16,13 @@ class Card extends Component {
   };
 
   render() {
-    const isOwn = this.props.card.owner._id === this.context._id;
+    const isOwn = this.props.card.owner === this.context._id;
     const cardDeleteButtonClassName = `element__trash ${
       isOwn ? '' : 'element__trash_hidden'
     }`;
 
-    const isLiked = this.props.card.likes.some(
-      (i) => i._id === this.context._id,
-    );
+    const isLiked = this.props.card.likes.some((i) => i === this.context._id);
+
     const cardLikeButtonClassName = `element__button-like ${
       isLiked ? 'element__button-like_active' : ''
     }`;

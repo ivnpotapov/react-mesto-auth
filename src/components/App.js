@@ -42,16 +42,9 @@ class App extends Component {
   componentDidMount() {
     this.tokenCheck();
 
-    Promise.all([api.getUserInfoApi(), api.getInitialCardsApi()])
-      .then(([resUser, resCard]) => {
-        this.setState({
-          currentUser: resUser,
-          cards: resCard,
-        });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // .catch((err) => {
+    //   console.log(err);
+    // });
   }
 
   tokenCheck = () => {
@@ -60,16 +53,38 @@ class App extends Component {
       auth
         .checkUser(jwt)
         .then((res) => {
+          api.headersAuth = jwt;
+          return Promise.all([
+            res,
+            api.getUserInfoApi(),
+            api.getInitialCardsApi(),
+          ]);
+        })
+        .then(([res, resUser, resCard]) => {
           this.setState(
             {
-              userEmail: res.data.email,
+              userEmail: res.email,
               loggedIn: true,
+              currentUser: resUser,
+              cards: resCard,
             },
             () => {
               this.props.history.push('/');
-            },
+            }
           );
         })
+        // .then((res) => {
+        //   this.setState(
+        //     {
+        //       userEmail: res.email,
+        //       loggedIn: true,
+        //     },
+        //     () => {
+        //       this.props.history.push('/');
+        //     }
+        //   );
+
+        // })
         .catch((err) => {
           console.log(err);
         });
@@ -85,7 +100,7 @@ class App extends Component {
         () => {
           localStorage.removeItem('token');
           this.props.history.push('/sign-in');
-        },
+        }
       );
     } else {
       this.setState(
@@ -94,7 +109,7 @@ class App extends Component {
         },
         () => {
           this.tokenCheck();
-        },
+        }
       );
     }
   };
@@ -173,13 +188,13 @@ class App extends Component {
 
   handleCardLike = (card) => {
     const isLiked = card.likes.some(
-      (like) => like._id === this.state.currentUser._id,
+      (like) => like === this.state.currentUser._id
     );
     api
       .changeLikeCardStatus(card._id, isLiked)
       .then((newCard) => {
         const stateWithNewCard = this.state.cards.map((stateCard) =>
-          stateCard._id === card._id ? newCard : stateCard,
+          stateCard._id === card._id ? newCard : stateCard
         );
         this.setState({
           cards: stateWithNewCard,

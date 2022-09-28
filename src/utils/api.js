@@ -5,6 +5,10 @@ class Api {
     this.changeLikeCardStatus = this.changeLikeCardStatus.bind(this);
   }
 
+  set headersAuth(token) {
+    this._headers.authorization = `Bearer ${token}`;
+  }
+
   _checkRes(res) {
     if (res.ok) {
       return res.json();
@@ -88,9 +92,9 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-39',
+  baseUrl: 'https://api.iv-partner.nomoredomains.xyz',
   headers: {
-    authorization: 'e68b1acd-e5bf-46c3-9f19-d62156ea5c7d',
+    authorization: '',
     'Content-Type': 'application/json',
   },
 });

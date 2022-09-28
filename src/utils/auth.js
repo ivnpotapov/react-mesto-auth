@@ -35,13 +35,13 @@ class Auth {
 
   checkUser(token) {
     return fetch(`${this._baseUrl}/users/me`, {
-      headers: { ...this._headers, Authorization: `Bearer ${token}` },
+      headers: { ...this._headers, authorization: `Bearer ${token}` },
     }).then(this._checkRes);
   }
 }
 
 const auth = new Auth({
-  baseUrl: 'https://auth.nomoreparties.co',
+  baseUrl: 'https://express-mesto-gha.onrender.com',
   headers: {
     'Content-Type': 'application/json',
   },
